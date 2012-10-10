@@ -1,7 +1,8 @@
 # app.rb
 require 'sinatra'
 require 'nokogiri'
-require 'pry'
+require 'haml'
+# require 'pry'
 
 get '/' do
   haml :index

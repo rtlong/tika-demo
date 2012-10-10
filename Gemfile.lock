@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.0.7)
+    haml (3.1.6)
     method_source (0.8)
     nokogiri (1.5.5)
     pry (0.9.10)
@@ -22,6 +23,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   nokogiri
   pry
   sinatra
