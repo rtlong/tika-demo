@@ -7,7 +7,7 @@ require 'haml'
 get '/' do
   haml :index
 end
-post '/' do
+get '/results' do
   url = params['url']
 
   results = Nokogiri::XML(`java -jar ./tika-app-1.2.jar -x "#{url}"`)
