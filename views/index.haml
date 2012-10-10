@@ -1,0 +1,19 @@
+%html
+  %head
+    :css
+      th {
+        text-align: right;
+        padding-right: 10px;
+      }
+      pre {
+        border: black 1px solid;
+        padding: 10px;
+      }
+  %body
+    %h1 Apache Tika Results
+
+    %form{action: '/', method: 'post'}
+      %label
+        URL to document
+        %input{type: :text, name: :url, size: 50}
+      %input{type: :submit}
