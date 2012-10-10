@@ -1,28 +1,21 @@
-%html
-  %head
-    :css
-      th {
-        text-align: right;
-        padding-right: 10px;
-      }
-      pre {
-        border: black 1px solid;
-        padding: 10px;
-      }
-  %body
-    %h1 Apache Tika Results
-    %p
-      These are the results for running Tika on this URL:
-      %a{href: url}= url
-    %p
-      %a{href: '/'} Try again
+%h1 Apache Tika Results
 
-    %h2 Metadata
-    %table
-      - metadata.each do |k,v|
-        %tr
-          %th= k + ?:
-          %td= v
+%p
+  These are the results for running Tika on this URL:
+  %a{href: url}= url
+%p
+  %a{href: '/'} Try again
 
-    %h2 Text Content
-    %pre= text
+%h2 Metadata
+%table
+  - metadata.each do |k,v|
+    %tr
+      %th= k + ?:
+      %td= v
+
+- if errors
+  %h2 Errors
+  %pre= errors
+
+%h2 Text Content
+%pre= text

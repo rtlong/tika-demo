@@ -1,7 +1,13 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem "sinatra"
+gem 'rack'
+gem 'sinatra'
 gem 'nokogiri'
 gem 'haml'
-gem 'pry'
+gem 'unicorn'
+
+group :development do
+  gem 'pry'
+  gem 'foreman'
+end
