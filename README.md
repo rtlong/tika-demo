@@ -1,0 +1,1 @@
+This is a super simple Rack/Sinatra app to demo the power of [Apache Tika](http://tika.apache.org/). It's meant to be pushed to Heroku as-is.
